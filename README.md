@@ -46,13 +46,12 @@ Linguagens: C, C++, Lógica de programação, Css e python.
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Laboratório de Classificação Visual** |  descrição: realize o treinamento de um modelo de imagem simples. | [Ver Projeto](./projeto-ia-churn/) |
+| **Laboratório de Classificação Visual** |  descrição: realize o treinamento de um modelo de imagem simples. | Links:https://drive.google.com/file/d/1klQJogwD2u_zb-6Cn-E-JEhaqOEEtMU9/view?usp=sharing
 Projeto| Nesta atividade fomos engenheiros de instrução. onde o objetivo é dominar a técnica de comunicação com modelos de linguagem (LLMs) para obter resultados de alta precisão no menor tempo possível.Dificuldades e acertos encontrados na atividade:
 
 Tivemos a limitações de apenas 5 interações com o prompt e senti que tivemos que ser muito específicos com a I.A pois ela acaba criando coisas das quais não estavam sendo pedidas no prompt, tirando isso não tinha compreendido muito bem a proposta das 5 iterações, mas no final entendi que era para nós termos um desafio a mais tirando isso foi divertido ver a I.A fazendo coisas das quais não pedimos.|
 Link: https://drive.google.com/file/d/1N0rEO3lBDEMqsnwe7-MHO8i4NlBRlkmQ/view?usp=sharing
 
-Links:https://drive.google.com/file/d/1klQJogwD2u_zb-6Cn-E-JEhaqOEEtMU9/view?usp=sharing
 https://drive.google.com/file/d/1YB_w1U6hX3Oxxc5tRnK7cQoY4So3HxkU/view?usp=sharing
 https://drive.google.com/file/d/1TC3W_zHvtvcJ136oDpBkS7_EZsrirrM_/view?usp=sharing
 https://drive.google.com/file/d/1uOC1sXZH4qHppDJQ3EChbsUuEx5hFN1I/view?usp=sharing
