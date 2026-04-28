@@ -47,7 +47,7 @@ Linguagens: C, C++, Lógica de programação, Css e python.
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
 | **Laboratório de Classificação Visual** |  descrição: realize o treinamento de um modelo de imagem simples. | Link: https://docs.google.com/document/d/1bEr6qdJ8Ee8oiMj1LNaPDAIrAQ4pLdMDQjbV1R9SFOc/edit?usp=sharing
-Projeto| Nesta atividade fomos engenheiros de instrução. onde o objetivo é dominar a técnica de comunicação com modelos de linguagem (LLMs) para obter resultados de alta precisão no menor tempo possível.Dificuldades e acertos encontrados na atividade: Tivemos a limitações de apenas 5 interações com o prompt e senti que tivemos que ser muito específicos com a I.A pois ela acaba criando coisas das quais não estavam sendo pedidas no prompt, tirando isso não tinha compreendido muito bem a proposta das 5 iterações, mas no final entendi que era para nós termos um desafio a mais tirando isso foi divertido ver a I.A fazendo coisas das quais não pedimos.|
+Projeto| Nesta atividade fomos engenheiros de instrução. onde o objetivo é dominar a técnica de comunicação com modelos de linguagem (LLMs) para obter resultados de alta precisão no menor tempo possível.Dificuldades e acertos encontrados na atividade: Tivemos a limitações de apenas 5 interações com o prompt e senti que tivemos que ser muito específicos com a I.A pois ela acaba criando coisas das quais não estavam sendo pedidas no prompt, tirando isso não tinha compreendido muito bem a proposta das 5 interações, mas no final entendi que era para termos um desafio a mais tirando isso foi divertido ver a I.A fazendo coisas das quais não pedimos e resolvendo esses ´´problemas``|
 
 
 Link: https://drive.google.com/file/d/1N0rEO3lBDEMqsnwe7-MHO8i4NlBRlkmQ/view?usp=sharing
