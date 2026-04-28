@@ -1,4 +1,4 @@
-# [Lucas Bereza]
+# Lucas Bereza
 > Estudante de [Análise e Desenvolvimento De Sistemas]
  
 ---
