@@ -46,7 +46,7 @@ Linguagens: C, C++, Lógica de programação, Css e python.
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Laboratório de Classificação Visual** |  descrição: realize o treinamento de um modelo de imagem simples. | Link: https://docs.google.com/document/d/1bEr6qdJ8Ee8oiMj1LNaPDAIrAQ4pLdMDQjbV1R9SFOc/edit?usp=sharing
+| **Laboratório de Classificação Visual** |  Na atividade, atuamos como engenheiros de instrução com o objetivo de aprender a nos comunicar de forma eficiente com modelos de linguagem, buscando respostas precisas em menos tempo. Entre as dificuldades, destacou-se o limite de cinco interações com o prompt, o que exigiu maior clareza e especificidade, já que a IA às vezes gerava informações não solicitadas. Inicialmente, a proposta desse limite não ficou clara, mas depois foi entendida como um desafio adicional. Apesar disso, a experiência foi interessante e divertida, especialmente ao lidar com respostas inesperadas da IA. | Link: https://docs.google.com/document/d/1bEr6qdJ8Ee8oiMj1LNaPDAIrAQ4pLdMDQjbV1R9SFOc/edit?usp=sharing
 Projeto| 
 
 
