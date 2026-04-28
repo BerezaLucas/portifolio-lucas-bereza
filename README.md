@@ -50,7 +50,10 @@ Linguagens: C, C++, Lógica de programação, Css e python.
 Projeto| Nesta atividade fomos engenheiros de instrução. onde o objetivo é dominar a técnica de comunicação com modelos de linguagem (LLMs) para obter resultados de alta precisão no menor tempo possível.Dificuldades e acertos encontrados na atividade: Tivemos a limitações de apenas 5 interações com o prompt e senti que tivemos que ser muito específicos com a I.A pois ela acaba criando coisas das quais não estavam sendo pedidas no prompt, tirando isso não tinha compreendido muito bem a proposta das 5 interações, mas no final entendi que era para termos um desafio a mais tirando isso foi divertido ver a I.A fazendo coisas das quais não pedimos e resolvendo esses ´´problemas``|
 
 
-Link: https://drive.google.com/file/d/1N0rEO3lBDEMqsnwe7-MHO8i4NlBRlkmQ/view?usp=sharing
+#### 🤖 Inteligência Artificial
+| Projeto | Descrição | Link |
+| :--- | :--- | :---: |
+| **Batalha de Modelos & Engenharia de Prompt** |  descrição: construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado. Este prompt será testado em diversas ferramentas (ChatGPT, Gemini, Claude, Qwen, DeepSeek, Grok, Maritaca). | Link:
 
 
 
