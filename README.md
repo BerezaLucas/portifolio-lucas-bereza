@@ -48,6 +48,7 @@ Linguagens: C, C++, Lógica de programação, Css e python.
 | :--- | :--- | :---: |
 | **Laboratório de Classificação Visual** | Prática de engenharia de prompts com IA para melhorar a comunicação. O limite de 5 interações exigiu mais precisão e clareza, tornando a atividade desafiadora e divertida, apesar de respostas inesperadas. | [Ver projeto](https://docs.google.com/document/d/1bEr6qdJ8Ee8oiMj1LNaPDAIrAQ4pLdMDQjbV1R9SFOc/edit?usp=sharing)| 
 | **Batalha de Modelos & Engenharia de Prompt** |  descrição: construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado. Este prompt será testado em diversas ferramentas (ChatGPT, Gemini, Claude, Qwen, DeepSeek, Grok, Maritaca). |  [Ver projeto] (link) 
+| **A Corrida do Prompt** |  descrição:  gerar um resultado específico (texto ou imagem, conforme definido pelo professor) utilizando o celular. O grande desafio? Vocês têm um limite de apenas 5 iterações (tentativas) para chegar à perfeição. |  [Ver projeto] ([link](https://docs.google.com/document/d/1_Fy2K837RGDUZFM03UJFCmWWqGQ-477zXaAfuKiBxrY/edit?usp=sharing)) 
 
 
 
