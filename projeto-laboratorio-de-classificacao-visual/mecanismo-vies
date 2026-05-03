@@ -1,6 +1,6 @@
 MECANISMO DO VIÉS
 
-O viés em sistemas de classificação visual emerge principalmente da forma como os dados de treinamento são selecionados e organizados. Quando há uma limitação na diversidade do dataset — seja em termos de ângulo, iluminação, contexto ou variação estrutural dos objetos — o modelo passa a aprender padrões incompletos e enviesados da realidade. Nesse cenário, o algoritmo não desenvolve uma compreensão ampla das classes, mas sim uma associação restrita baseada em características repetidas.
+O modelo passa a aprender padrões incompletos e enviesados da realidade. Nesse cenário, o algoritmo não desenvolve uma compreensão ampla das classes, mas sim uma associação restrita baseada em características repetidas.
 
 Essa limitação ocorre porque modelos de aprendizado de máquina operam por reconhecimento estatístico de padrões. Assim, ao serem expostos a um conjunto de dados homogêneo, tendem a supervalorizar atributos específicos presentes com maior frequência, tratando-os como representativos de toda a classe. Como consequência, qualquer entrada que fuja desse padrão dominante possui alta probabilidade de ser classificada incorretamente.
 
