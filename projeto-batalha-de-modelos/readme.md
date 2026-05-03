@@ -9,7 +9,8 @@ Análise Crítica: Avaliar a precisão técnica e a conformidade de diferentes L
 
 Aprender a Aprender: Desenvolver a metacognição ao identificar as nuances, pontos fortes e limitações de cada arquitetura de IA para tarefas de desenvolvimento Front-end.
 
-2. A Tarefa
+2. A Tarefa:
+
 Você deve construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado. Este prompt será testado em diversas ferramentas (ChatGPT, Gemini, Claude, Qwen, DeepSeek, Grok, Maritaca).
 
 3. Protocolo de Execução
