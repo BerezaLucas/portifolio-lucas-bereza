@@ -4,6 +4,7 @@ Integrante:
 
 Lucas Bereza
 1. Objetivos da Atividade
+
 Análise Crítica: Avaliar a precisão técnica e a conformidade de diferentes LLMs (Large Language Models) em relação a um conjunto estrito de instruções.
 Aprender a Aprender: Desenvolver a metacognição ao identificar as nuances, pontos fortes e limitações de cada arquitetura de IA para tarefas de desenvolvimento Front-end.
 2. A Tarefa
