@@ -14,8 +14,11 @@ O projeto consiste na geração de faixas musicais completas por meio da ferrame
 3 MÚSICAS GERADAS
 Nº	Nome da Faixa
 1	Hello, Hello, Low
+
 2	Impossible not-Probable
+
 3	Share that Air
+
 4	Weapons, Friends
 
 4 ARQUIVOS ENTREGUES
