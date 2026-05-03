@@ -24,9 +24,9 @@ Linguagens: C, C++, Lógica de programação, Css e python.
  
 #### 💻 Linguagens e Tecnologias
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 
  
 #### 🗄️ Banco de Dados
@@ -35,6 +35,8 @@ Linguagens: C, C++, Lógica de programação, Css e python.
 #### 🤖 Inteligência Artificial & Ciência de Dados
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
  
 ---
  
@@ -45,7 +47,7 @@ Linguagens: C, C++, Lógica de programação, Css e python.
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Laboratório de Classificação Visual** | Prática de engenharia de prompts com IA para melhorar a comunicação. O limite de 5 interações exigiu mais precisão e clareza, tornando a atividade desafiadora e divertida, apesar de respostas inesperadas. | [Ver projeto](https://docs.google.com/document/d/1bEr6qdJ8Ee8oiMj1LNaPDAIrAQ4pLdMDQjbV1R9SFOc/edit?usp=sharing)| 
+| **Laboratório de Classificação Visual** |Desenvolvendo uma Imagem com Qwen 3.5 com apenas 5 instruções.| [Ver projeto](https://docs.google.com/document/d/1bEr6qdJ8Ee8oiMj1LNaPDAIrAQ4pLdMDQjbV1R9SFOc/edit?usp=sharing)| 
 | **Batalha de Modelos & Engenharia de Prompt** |  descrição: construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado. Este prompt será testado em diversas ferramentas (ChatGPT, Gemini, Claude, Qwen, DeepSeek, Grok, Maritaca). |[Ver projeto](https://docs.google.com/document/d/1zwlEOYWqWHEbXmvH_-iGftV9DQiEnBE-bq41EQN5Les/edit?usp=sharing)
 | **A Corrida do Prompt** |  descrição:  gerar um resultado específico (texto ou imagem, conforme definido pelo professor) utilizando o celular. O grande desafio? Vocês têm um limite de apenas 5 iterações (tentativas) para chegar à perfeição. |  [Ver projeto](https://docs.google.com/document/d/1_Fy2K837RGDUZFM03UJFCmWWqGQ-477zXaAfuKiBxrY/edit?usp=sharing)|
 
