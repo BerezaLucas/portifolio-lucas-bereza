@@ -24,6 +24,7 @@ Nº	Nome da Faixa
 
 4 ARQUIVOS ENTREGUES
 
-5 FERRAMENTA UTILIZADA
+5 FERRAMENTA UTILIZADA:
+
 Ferramenta	Descrição
 Suno AI	Plataforma de geração musical por IA que cria faixas completas a partir de prompts de texto, incluindo letra, melodia, arranjo e produção.
