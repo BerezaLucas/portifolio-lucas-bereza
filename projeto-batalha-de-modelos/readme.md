@@ -1,83 +1,102 @@
-Engenharia de Prompt e Aplicações em IA
+ENGENHARIA DE PROMPT E APLICAÇÕES EM INTELIGÊNCIA ARTIFICIAL
 Batalha de Modelos & Engenharia de Prompt (XML)
-Integrante:
 
-Lucas Bereza
-1. Objetivos da Atividade
+Autor: Lucas Bereza
 
-Análise Crítica: Avaliar a precisão técnica e a conformidade de diferentes LLMs (Large Language Models) em relação a um conjunto estrito de instruções.
+1 INTRODUÇÃO
 
-Aprender a Aprender: Desenvolver a metacognição ao identificar as nuances, pontos fortes e limitações de cada arquitetura de IA para tarefas de desenvolvimento Front-end.
+A crescente evolução dos modelos de linguagem de grande escala (LLMs) tem ampliado significativamente suas aplicações no desenvolvimento de software, especialmente no contexto de front-end. Nesse cenário, a Engenharia de Prompt surge como uma habilidade essencial para maximizar a eficiência e precisão dessas ferramentas.
 
-2. A Tarefa:
+Este trabalho propõe uma análise comparativa entre diferentes modelos de inteligência artificial, utilizando um prompt estruturado em XML como base para avaliação. O objetivo central é investigar a capacidade dessas IAs em interpretar instruções formais e gerar resultados consistentes com requisitos técnicos específicos.
 
-Você deve construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado. Este prompt será testado em diversas ferramentas (ChatGPT, Gemini, Claude, Qwen, DeepSeek, Grok, Maritaca).
+2 OBJETIVOS DA ATIVIDADE
+2.1 Objetivo Geral
 
-3. Protocolo de Execução
-O prompt estruturado em XML utilizado foi o seguinte:
+Avaliar o desempenho de diferentes modelos de linguagem na interpretação e execução de um prompt estruturado em XML.
 
-Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado
+2.2 Objetivos Específicos
+Realizar uma análise crítica da precisão técnica das respostas geradas;
+Verificar a conformidade dos modelos com as diretrizes estabelecidas no prompt;
+Desenvolver a metacognição ao identificar pontos fortes e limitações das IAs;
+Comparar o desempenho das ferramentas na geração de código front-end.
+3 METODOLOGIA
+
+A metodologia adotada baseou-se na criação e aplicação de um prompt estruturado em XML, com o objetivo de gerar uma página HTML single page com CSS integrado.
+
+3.1 Estrutura do Prompt
 <tarefa> 
 <objetivo>Criar uma página HTML5 única com CSS3 interno (single page).</objetivo> 
-<tema>Portal do Brasileirão 2026 — tabela de classificação da Série A com galeria de 
-momentos da rodada.</tema> 
+<tema>Portal do Brasileirão 2026 — tabela de classificação da Série A com galeria de momentos da rodada.</tema> 
 <diretrizes_design> 
-<layout>Responsivo e minimalista, com grid assimétrico na galeria e header fixo com 
-efeito de vidro.</layout> 
-<paleta_cores>Vermelho vinho (#8B1A1A) e preto (#0A0505), com tons de vinho escuro 
-para cards e textos em bege rosado (#FFF0F0).</paleta_cores> 
-<tipografia>Bebas Neue para títulos e números (display), DM Sans para corpo, Playfair 
-Display itálico para acento. Importar via Google Fonts.</tipografia> 
+<layout>Responsivo e minimalista, com grid assimétrico na galeria e header fixo com efeito de vidro.</layout> 
+<paleta_cores>Vermelho vinho (#8B1A1A) e preto (#0A0505), com tons de vinho escuro para cards e textos em bege rosado (#FFF0F0).</paleta_cores> 
+<tipografia>Bebas Neue para títulos e números (display), DM Sans para corpo, Playfair Display itálico para acento. Importar via Google Fonts.</tipografia> 
 </diretrizes_design> 
 <obrigatoriedades_tecnicas> 
-<item>Menu de navegação funcional (âncoras) com efeito de sublinhado deslizante no 
-hover e backdrop-filter blur no header.</item> 
-<item>Seção de galeria com grid assimétrico: card grande à esquerda ocupando 2 linhas, 
-dois cards menores à direita, com efeito de luz vinho no hover.</item> 
-<item>Rodapé com informações de contato simuladas (email, telefone, localização) com 
-ícones e layout em duas colunas.</item> 
-<item>Tabela de classificação com barra lateral colorida por zona (Libertadores, 
-Pré-Libertadores, Sul-Americana, Rebaixamento), ícone circular por clube e badge animado 
-"Rodada 4 em andamento" com ponto pulsando ao vivo.</item> 
+<item>Menu de navegação funcional (âncoras) com efeito de sublinhado deslizante no hover e backdrop-filter blur no header.</item> 
+<item>Seção de galeria com grid assimétrico: card grande à esquerda ocupando 2 linhas, dois cards menores à direita, com efeito de luz vinho no hover.</item> 
+<item>Rodapé com informações de contato simuladas (email, telefone, localização) com ícones e layout em duas colunas.</item> 
+<item>Tabela de classificação com barra lateral colorida por zona (Libertadores, Pré-Libertadores, Sul-Americana, Rebaixamento), ícone circular por clube e badge animado "Rodada 4 em andamento" com ponto pulsando ao vivo.</item> 
 </obrigatoriedades_tecnicas> 
 <metrica_obrigatoria> 
-Ao final da resposta, informe uma estimativa de quantos tokens foram gerados para este 
-código. 
+Ao final da resposta, informe uma estimativa de quantos tokens foram gerados para este código. 
 </metrica_obrigatoria> 
-</tarefa> 
-
-<tarefa>
-  <objetivo>Criar uma página HTML5 única com CSS3 interno (single page).</objetivo>
-  <tema>Formula 1 e a Temporada de 2026</tema>
-  <diretrizes_design>
-    <layout>Responsivo e minimalista.</layout>
-    <paleta_cores>Vermelho, Vermelho Vinho e Preto</paleta_cores>
-    <tipografia>Sans-serif para títulos, Serif para corpo.</tipografia>
-  </diretrizes_design>
-  <obrigatoriedades_tecnicas>
-    <item>Menu de navegação funcional (âncoras).</item>
-    <item>.</item>
-    <item>Rodapé com informações de contato simuladas.</item>
-    <item>Abas com todos os carros e as informações dele no ano de 2026 e os melhores carros de Formula 1.</item>
-  </obrigatoriedades_tecnicas>
-  <metrica_obrigatoria>
-    Ao final da resposta, informe uma estimativa de quantos tokens foram gerados para este código.
-  </metrica_obrigatoria>
 </tarefa>
 
-Etapas seguidas:
+O prompt foi desenvolvido contendo as seguintes diretrizes:
 
-Submissão: O mesmo prompt XML foi enviado para todas as IAs via celular.
-Coleta de Dados: A avaliação focou na fidelidade ao XML — se a IA ignorou alguma tag ou não respeitou as cores — e não apenas na estética do resultado.
-Registro de Performance: O consumo de tokens foi anotado conforme informado ou estimado por cada ferramenta.
+Definição clara do objetivo da tarefa;
+Especificação de tema;
+Diretrizes de design (layout, cores e tipografia);
+Requisitos técnicos obrigatórios;
+Solicitação de métrica de tokens ao final da resposta.
 
-Reflexão Crítica:
-1. Qual modelo demonstrou maior "compreensão" da estrutura do prompt em XML? 
-R: O Modelo feita pela Claude pois ele se encontra muito mais completo, html e css sólidos, e o prompt não ficou quebrado. 
+Foram utilizados dois cenários distintos:
 
-2. Houve diferença significativa na verbosidade (tokens) entre as IAs para o mesmo resultado?
-R: Avaliamos duas I.A diferentes a claude com o gemini por exemplo, o melhor claramente a claude ficou muito superior com o uso maior de tokens. 
+Portal do Brasileirão 2026;
+Página temática sobre Fórmula 1 na temporada de 2026.
+3.2 Protocolo de Execução
 
-3. Com base nesta experiência, qual ferramenta você escolheria para prototipagem rápida e qual escolheria para códigos mais complexos? 
-R: Claude Pois com apenas as ordens descritas ele conseguiu com poucas descrições desenvolver bem melhor que a maioria. 
+O experimento seguiu as seguintes etapas:
 
+Submissão: O mesmo prompt XML foi enviado para diferentes ferramentas de IA, incluindo ChatGPT, Gemini, Claude, Qwen, DeepSeek, Grok e Maritaca;
+Coleta de Dados: A análise priorizou a fidelidade estrutural ao XML, verificando se as instruções foram corretamente interpretadas;
+Registro de Performance: O consumo de tokens foi registrado conforme informado ou estimado por cada modelo.
+4 RESULTADOS E ANÁLISE
+
+A avaliação dos modelos evidenciou diferenças significativas na interpretação do prompt e na qualidade dos resultados gerados.
+
+4.1 Compreensão da Estrutura XML
+
+O modelo que demonstrou maior compreensão da estrutura proposta foi o Claude, apresentando:
+
+Código HTML e CSS bem estruturado;
+Alta fidelidade às diretrizes do prompt;
+Ausência de quebras ou inconsistências na saída.
+4.2 Verbosidade e Consumo de Tokens
+
+Observou-se diferença relevante na quantidade de tokens utilizados entre os modelos analisados. Comparando Claude e Gemini:
+
+O Claude apresentou maior uso de tokens;
+Esse maior consumo resultou em respostas mais completas e detalhadas;
+O Gemini apresentou respostas mais concisas, porém menos robustas.
+5 DISCUSSÃO
+
+Os resultados indicam que modelos com maior capacidade de processamento e geração textual tendem a produzir soluções mais completas, especialmente em tarefas que exigem múltiplas camadas de instrução, como prompts estruturados em XML.
+
+Além disso, a fidelidade à estrutura do prompt mostrou-se um fator crítico na avaliação, superando aspectos puramente estéticos do código gerado.
+
+6 CONCLUSÃO
+
+Com base na análise realizada, conclui-se que o modelo Claude apresentou o melhor desempenho geral, destacando-se pela capacidade de interpretar corretamente instruções complexas e gerar código consistente.
+
+Dessa forma:
+
+Para prototipagem rápida, recomenda-se o uso de modelos que equilibrem velocidade e clareza;
+Para desenvolvimento de códigos mais complexos, o Claude se mostrou a escolha mais adequada.
+
+A atividade reforça a importância da Engenharia de Prompt como competência fundamental no uso eficiente de ferramentas de inteligência artificial.
+
+7 REFERÊNCIAS
+
+OPENAI. ChatGPT. Disponível em: https://chat.openai.com/
