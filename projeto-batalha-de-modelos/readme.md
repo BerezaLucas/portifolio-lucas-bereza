@@ -24,6 +24,7 @@ Comparar o desempenho das ferramentas na geração de código front-end.
 A metodologia adotada baseou-se na criação e aplicação de um prompt estruturado em XML, com o objetivo de gerar uma página HTML single page com CSS integrado.
 
 3.1 Estrutura do Prompt
+
 <tarefa> 
 <objetivo>Criar uma página HTML5 única com CSS3 interno (single page).</objetivo> 
 <tema>Portal do Brasileirão 2026 — tabela de classificação da Série A com galeria de momentos da rodada.</tema> 
@@ -42,6 +43,7 @@ A metodologia adotada baseou-se na criação e aplicação de um prompt estrutur
 Ao final da resposta, informe uma estimativa de quantos tokens foram gerados para este código. 
 </metrica_obrigatoria> 
 </tarefa>
+
 
 O prompt foi desenvolvido contendo as seguintes diretrizes:
 
