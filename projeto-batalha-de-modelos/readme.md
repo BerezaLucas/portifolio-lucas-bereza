@@ -45,6 +45,7 @@ Ao final da resposta, informe uma estimativa de quantos tokens foram gerados par
 </tarefa>
 
 
+
 O prompt foi desenvolvido contendo as seguintes diretrizes:
 
 Definição clara do objetivo da tarefa;
