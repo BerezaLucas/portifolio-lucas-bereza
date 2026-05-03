@@ -16,7 +16,7 @@ Carro
 Moto
 Alimentação de Dados (Dataset Enviesado): Foram capturadas 20 imagens para cada categoria, utilizando deliberadamente critérios estereotipados e limitados — apenas um padrão dominante por classe, sem diversidade de ângulos, iluminação ou características físicas variadas.
 
-Teste de Inferência: A câmera foi apontada para um colega que não se encaixava nos padrões capturados durante o treinamento.
+Teste de Inferência: A câmera foi apontada para um monitor que não se encaixava nos padrões capturados durante o treinamento.
 
 Registro do Erro: O print abaixo registra o momento exato em que o modelo realizou uma classificação incorreta devido ao viés dos dados de treinamento.
 <img width="350" height="651" alt="foto-tarefa" src="https://github.com/user-attachments/assets/84760633-905d-45e0-a7bb-0fd219c9ee02" />
