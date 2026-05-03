@@ -11,6 +11,8 @@ Carro Moto Alimentação de Dados (Dataset Enviesado): Foram capturadas 20 image
 Teste de Inferência: A câmera foi apontada para um monitor que não se encaixava nos padrões capturados durante o treinamento.
 
 Registro do Erro: O print abaixo registra o momento exato em que o modelo realizou uma classificação incorreta devido ao viés dos dados de treinamento.foto-tarefa
+<img width="406" height="757" alt="image" src="https://github.com/user-attachments/assets/000ad572-77ec-4181-b0cf-ffcd6c8684d2" />
+
 
 Protocolo de Execução Etapa Ação Realizada Acesso à plataforma Teachable Machine via navegador mobile: Categorias criadas: Carro / Moto Imagens por categoria 20 imagens cada Critério de enviesamento Padrão único dominante por classe Teste de inferência objeto nada haver com o treinamento Resultado obtido Classificação incorreta com alta confiança (99%)
 
