@@ -60,11 +60,13 @@ código.
     Ao final da resposta, informe uma estimativa de quantos tokens foram gerados para este código.
   </metrica_obrigatoria>
 </tarefa>
+
 Etapas seguidas:
 
 Submissão: O mesmo prompt XML foi enviado para todas as IAs via celular.
 Coleta de Dados: A avaliação focou na fidelidade ao XML — se a IA ignorou alguma tag ou não respeitou as cores — e não apenas na estética do resultado.
 Registro de Performance: O consumo de tokens foi anotado conforme informado ou estimado por cada ferramenta.
+
 Reflexão Crítica:
 1. Qual modelo demonstrou maior "compreensão" da estrutura do prompt em XML? 
 R: O Modelo feita pela Claude pois ele se encontra muito mais completo, html e css sólidos, e o prompt não ficou quebrado. 
