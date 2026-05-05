@@ -65,7 +65,7 @@ Siga os passos abaixo para rodar o projeto:
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/party-up.git
+git clone https://github.com/BerezaLucas/party-up.git
 ```
 
 2. Abra o projeto no Android Studio
@@ -88,7 +88,7 @@ git clone https://github.com/seu-usuario/party-up.git
 
 ## 🔍 Preview do App
 
-*(Adicione aqui o link gerado pela Manus AI)*
+*((https://manus.im/app-preview/7hEHtaYVUwNbaofm9wdTGj?sessionId=dciJAx2LdSHzmxYOT2m3hT))*
 
 ---
 
