@@ -16,7 +16,7 @@
 > _Insira abaixo a imagem do QR Code gerada pela Manus AI:_
 
 ```
-<img width="216" height="217" alt="Qr-code-app" src="https://github.com/user-attachments/assets/35cc3fd1-9d50-4648-9fe5-3e8d4044a84a" />
+[Tela de inicio].<img width="216" height="217" alt="Qr-code-app" src="https://github.com/user-attachments/assets/35cc3fd1-9d50-4648-9fe5-3e8d4044a84a" />
 
 
 
