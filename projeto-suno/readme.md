@@ -20,10 +20,10 @@ O assistente (Gems) utilizado para modelagem das letras pode ser acessado atrav�
 | Faixa | Título | Estilo/Referência | Link do Áudio |
 | :--- | :--- | :--- | :--- |
 | 01 | [Título 01] | [Estilo] | [Arquivo MP3](./audio/Cicatrizes%20e%20Sonhos.mp3) |
-| 02 | [Título 02] | [Estilo] | [Arquivo MP3](./audio/) |
-| 03 | [Título 03] | [Estilo] | [Arquivo MP3](./audio/) |
-| 04 | [Título 04] | [Estilo] | [Arquivo MP3](./audio/) |
-| 05 | [Título 05] | [Estilo] | [Arquivo MP3](./audio/) |
+| 02 | [Título 02] | [Estilo] | [Arquivo MP3](./audio/Herança%20do%20Asfalto.mp3) |
+| 03 | [Título 03] | [Estilo] | [Arquivo MP3](./audio/O%20Espelho%20do%20asfalto.mp3) |
+| 04 | [Título 04] | [Estilo] | [Arquivo MP3](./audio/O%20Motor%20Velho.mp3) |
+| 05 | [Título 05] | [Estilo] | [Arquivo MP3](./audio/O%20Valor%20do%Proceder.mp3) |
  
 ## 📄 Processo de Criação
 1. **Curadoria:** Seleção de 10 letras do artista base.
