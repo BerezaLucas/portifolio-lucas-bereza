@@ -14,14 +14,8 @@
 ## 📱 QR Code
 
 > _Insira abaixo a imagem do QR Code gerada pela Manus AI:_
+<img width="216" height="217" alt="Qr-code-app" src="https://github.com/user-attachments/assets/35cc3fd1-9d50-4648-9fe5-3e8d4044a84a" />
 
-```
-[Tela de inicio].<img width="739" height="1600" alt="tela-sala-de-reuniao" src="https://github.com/user-attachments/assets/2d770462-43e8-49c0-a062-dcdba1597072"/>
-
-
-
-
-```
 
 ## 💡 Proposta de Valor
 
@@ -37,13 +31,10 @@
 
 ## 🖼️ Capturas de Tela
 
+Tela incial.<img width="739" height="1600" alt="tela-inicial" src="https://github.com/user-attachments/assets/02630734-23f1-4ae9-8eaf-e912556f888c" />
 
-```
+Tela sala de reunião.<img width="739" height="1600" alt="tela-sala-de-reuniao" src="https://github.com/user-attachments/assets/e12c7f8d-4345-46ae-9243-6f7e69147d05" />
 
-
-
-
-```
 
 ## 🚀 Instruções de Uso
 
