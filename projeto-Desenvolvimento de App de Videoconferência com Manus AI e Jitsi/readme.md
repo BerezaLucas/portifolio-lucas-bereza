@@ -16,7 +16,8 @@
 > _Insira abaixo a imagem do QR Code gerada pela Manus AI:_
 
 ```
-[Tela de inicio].<img width="739" height="1600" alt="tela-sala-de-reuniao" src="https://github.com/user-attachments/assets/tela-sala-de-reuniao.jpeg" />
+[Tela de inicio].<img width="739" height="1600" alt="tela-sala-de-reuniao" src="https://github.com/user-attachments/assets/2d770462-43e8-49c0-a062-dcdba1597072"/>
+" />
 
 
 
