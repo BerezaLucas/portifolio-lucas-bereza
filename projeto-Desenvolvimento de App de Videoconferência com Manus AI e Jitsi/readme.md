@@ -73,12 +73,17 @@ Abra o [link de pré-visualização](https://manus.im/app-preview/nfBNNibYFoNFsX
 
 ## 🛠️ Tecnologias Utilizadas
 
-| Tecnologia | Função |
+| Tecnologia |
 
-| Jitsi Meet | Engine de videoconferência |
-| JavaScript | Integração com a Jitsi API |
-| HTML/CSS | Interface do usuário |
-| Manus AI | Deploy e hospedagem |
+| Jitsi Meet |
+| JavaScript | 
+| Manus AI | 
+
+| Função |
+| Engine de videoconferência |
+ | Integração com a Jitsi API |
+ | Interface do usuário |
+ | Deploy e hospedagem |
 
 ---
 
