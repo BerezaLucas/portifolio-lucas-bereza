@@ -19,7 +19,7 @@ O assistente (Gems) utilizado para modelagem das letras pode ser acessado atrav�
 ## 🎧 Músicas Geradas
 | Faixa | Título | Estilo/Referência | Link do Áudio |
 | :--- | :--- | :--- | :--- |
-| 01 | [Título 01] | [Estilo] | [Arquivo MP3](./audio/) |
+| 01 | [Título 01] | [Estilo] | [Arquivo MP3](./audio/Cicatrizes%20e%20Sonhos.mp3) |
 | 02 | [Título 02] | [Estilo] | [Arquivo MP3](./audio/) |
 | 03 | [Título 03] | [Estilo] | [Arquivo MP3](./audio/) |
 | 04 | [Título 04] | [Estilo] | [Arquivo MP3](./audio/) |
