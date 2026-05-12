@@ -7,7 +7,7 @@
 
 ## 🔗 Link de Pré-visualização
 
-[▶ Acessar o App].[Acessar App ▶](https://manus.im/app-preview/nfBNNibYFoNFsXbYtoGwmU?sessionId=C3BSWGvkn89pw6dyRAY8tT))
+[Acessar App ▶](https://manus.im/app-preview/nfBNNibYFoNFsXbYtoGwmU?sessionId=C3BSWGvkn89pw6dyRAY8tT))
 
 ---
 
