@@ -17,7 +17,7 @@
 
 ```
 [Tela de inicio].<img width="739" height="1600" alt="tela-sala-de-reuniao" src="https://github.com/user-attachments/assets/2d770462-43e8-49c0-a062-dcdba1597072"/>
-" />
+
 
 
 
