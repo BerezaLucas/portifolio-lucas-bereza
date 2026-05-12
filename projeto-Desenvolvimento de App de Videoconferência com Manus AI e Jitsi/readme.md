@@ -34,7 +34,6 @@
 
 ## 🖼️ Capturas de Tela
 
-> _Adicione screenshots ou um GIF animado demonstrando o app em funcionamento:_
 
 ```
 <img width="739" height="1600" alt="tela-inicial" src="https://github.com/user-attachments/assets/9fab1a8d-a8c0-402a-b69d-da6548e176ba" />
