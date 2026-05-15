@@ -21,7 +21,6 @@
 
 **Por que o Party up é único?**
 
-- ✅ **Zero instalação** — funciona 100% no navegador, sem cadastro obrigatório
 - ✅ **Open Source** — baseado no Jitsi Meet, tecnologia confiável e auditável
 - ✅ **Salas instantâneas** — crie ou entre em uma reunião com um único clique
 - ✅ **Privacidade primeiro** — sem rastreamento de dados ou dependência de Big Tech
