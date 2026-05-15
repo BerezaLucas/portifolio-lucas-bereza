@@ -48,8 +48,7 @@ Linguagens: , C++, Lógica de programação, Css e python.
 | :--- | :--- | :---: |
 **SM1 - A Corrida do Prompt  ** |gerar um resultado específico (texto ou imagem, conforme definido pelo professor) utilizando o celular. O grande desafio? limite de apenas 5 iterações (tentativas) para chegar à perfeição. |  [Ver projeto](https://docs.google.com/document/d/1_Fy2K837RGDUZFM03UJFCmWWqGQ-477zXaAfuKiBxrY/edit?usp=sharing)|
 **SM2 - Laboratório de Classificação Visual ** |Desenvolvendo uma Imagem com Qwen 3.5 com apenas 5 instruções.| [Ver projeto](https://docs.google.com/document/d/1bEr6qdJ8Ee8oiMj1LNaPDAIrAQ4pLdMDQjbV1R9SFOc/edit?usp=sharing)| 
-| **SM3 - Batalha de Modelos & Engenharia de Prompt (XML)** | construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado.|[Ver projeto]
-(https://docs.google.com/document/d/1zwlEOYWqWHEbXmvH_-iGftV9DQiEnBE-bq41EQN5Les/edit?usp=sharing)
+| **SM3 - Batalha de Modelos & Engenharia de Prompt (XML)** | construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado.|[Ver projeto](https://docs.google.com/document/d/1zwlEOYWqWHEbXmvH_-iGftV9DQiEnBE-bq41EQN5Les/edit?usp=sharing)
 **Desenvolvimento de App de Videoconferência com Manus AI e Jitsi** |Aplicativo Criado com a ferramenta em Manus A.I |  [Ver projeto]()|
 
 
