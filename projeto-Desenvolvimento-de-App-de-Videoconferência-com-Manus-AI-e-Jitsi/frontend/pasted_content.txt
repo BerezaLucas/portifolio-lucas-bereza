@@ -1,0 +1,416 @@
+# Documentação - Sistema de Videoconferência Jitsi Meet
+
+## Visão Geral
+
+O ImóvelConnect integra o **Jitsi Meet** para videoconferências em tempo real entre clientes e corretores de imóveis. O sistema foi otimizado para funcionar perfeitamente em dispositivos móveis Android e iOS.
+
+## Arquitetura
+
+### Componentes Principais
+
+| Componente | Localização | Responsabilidade |
+|-----------|------------|------------------|
+| **VideoCall Screen** | `app/videocall/[roomId].tsx` | Interface de videochamada com Jitsi |
+| **Chat Integration** | `app/chat/[id].tsx` | Iniciar videochamada do chat |
+| **Broker Profile** | `app/broker/[id].tsx` | Iniciar videochamada com corretor |
+| **Property Detail** | `app/property/[id].tsx` | Iniciar videochamada sobre propriedade |
+| **Appointment API** | `server/routers.ts` | Criar agendamentos com jitsiRoomId |
+| **Database** | `drizzle/schema.ts` | Armazenar dados de agendamentos |
+
+### Fluxo de Dados
+
+```
+Usuário clica em "Iniciar Videochamada"
+    ↓
+Validação de autenticação e dados
+    ↓
+Criar agendamento com jitsiRoomId único
+    ↓
+Navegar para tela de videochamada
+    ↓
+Carregar Jitsi Meet com configurações
+    ↓
+Usuários se conectam à sala
+    ↓
+Videochamada ativa
+    ↓
+Usuário encerra ou sai
+    ↓
+Atualizar status do agendamento
+```
+
+## Configuração do Jitsi
+
+### Servidor Público
+
+O aplicativo usa o servidor público **meet.jit.si** (sem autenticação necessária):
+
+```javascript
+const domain = 'meet.jit.si';
+```
+
+### Opções de Configuração
+
+#### Vídeo e Áudio
+
+```javascript
+startWithAudioMuted: false,        // Áudio ligado por padrão
+startWithVideoMuted: false,        // Vídeo ligado por padrão
+resolution: 720,                   // Resolução ideal
+constraints: {
+  video: {
+    height: { ideal: 720, max: 1080, min: 360 },
+    width: { ideal: 1280, max: 1920, min: 640 }
+  }
+}
+```
+
+#### Interface
+
+```javascript
+enableWelcomePage: false,          // Sem tela de boas-vindas
+prejoinPageEnabled: false,         // Sem tela de pré-entrada
+TOOLBAR_ALWAYS_VISIBLE: false,     // Barra de ferramentas dinâmica
+SHOW_JITSI_WATERMARK: false,       // Sem marca d'água Jitsi
+```
+
+#### Desempenho
+
+```javascript
+p2p: { enabled: true },            // Conexão P2P para melhor latência
+enableLayerSuspension: true,       // Suspender camadas em baixa banda
+enableOpusRed: true,               // Redundância de áudio
+enableNoisyMicDetection: true,     // Detectar ruído do microfone
+```
+
+#### Segurança
+
+```javascript
+disableDeepLinking: true,          // Desabilitar deep linking
+disableThirdPartyRequests: false,  // Permitir requisições de terceiros
+analytics: { disabled: true },     // Desabilitar analytics
+```
+
+### Botões da Barra de Ferramentas
+
+```javascript
+toolbarButtons: [
+  'microphone',           // Controlar microfone
+  'camera',               // Controlar câmera
+  'closedcaptions',       // Legendas
+  'desktop',              // Compartilhar tela
+  'fullscreen',           // Tela cheia
+  'fodeviceselection',    // Seleção de dispositivos
+  'hangup',               // Encerrar chamada
+  'chat',                 // Chat integrado
+  'raisehand',            // Levantar mão
+  'videoquality',         // Controle de qualidade
+  'filmstrip',            // Fita de participantes
+  'tileview',             // Visualização em grade
+  'select-background',    // Trocar fundo
+  'mute-everyone',        // Mutar todos
+  'security'              // Configurações de segurança
+]
+```
+
+## Geração de Room ID
+
+### Formato
+
+```javascript
+const jitsiRoomId = `imovelconnect-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+```
+
+**Exemplo**: `imovelconnect-1715425200000-abc123def45`
+
+### Características
+
+- **Único**: Combinação de timestamp + string aleatória garante unicidade
+- **Legível**: Prefixo "imovelconnect" identifica a origem
+- **Seguro**: Não sequencial, difícil de adivinhar
+- **Persistente**: Armazenado no banco de dados para referência futura
+
+## Tratamento de Erros
+
+### Tipos de Erro
+
+| Erro | Causa | Solução |
+|------|-------|---------|
+| `connectionFailed` | Sem internet ou servidor indisponível | Verificar conexão, tentar novamente |
+| `connectionInterrupted` | Queda de conexão durante chamada | Reconectar automaticamente |
+| `errorOccurred` | Erro genérico do Jitsi | Verificar logs, tentar novamente |
+| `timeout` | Demora > 15s para conectar | Verificar banda, tentar novamente |
+| `UNAUTHORIZED` | Usuário não autenticado | Fazer login |
+
+### Retry Automático
+
+O sistema permite até **3 tentativas** de reconexão:
+
+```javascript
+if (retryCount < 3) {
+  setError(false);
+  setLoading(true);
+  setRetryCount(retryCount + 1);
+  // Tentar novamente
+}
+```
+
+### Timeouts
+
+| Timeout | Duração | Propósito |
+|---------|---------|----------|
+| Load | 15s | Tempo máximo para carregar Jitsi |
+| Fallback | 10s | Esconder loading se Jitsi não responder |
+
+## Event Listeners
+
+### Eventos Implementados
+
+```javascript
+api.addEventListener('videoConferenceJoined', () => {
+  // Usuário entrou na sala
+  // Esconder loading screen
+});
+
+api.addEventListener('videoConferenceLeft', () => {
+  // Usuário saiu da sala
+  // Voltar para chat
+});
+
+api.addEventListener('readyToClose', () => {
+  // Jitsi pronto para fechar
+  // Encerrar sessão
+});
+
+api.addEventListener('participantJoined', (e) => {
+  // Novo participante entrou
+  // Registrar evento
+});
+
+api.addEventListener('errorOccurred', (e) => {
+  // Erro ocorreu
+  // Mostrar mensagem de erro
+});
+
+api.addEventListener('connectionFailed', () => {
+  // Falha de conexão
+  // Tentar reconectar
+});
+
+api.addEventListener('connectionInterrupted', () => {
+  // Conexão interrompida
+  // Mostrar mensagem de reconexão
+});
+```
+
+## Validações
+
+### Antes de Iniciar Videochamada
+
+1. **Autenticação**: Usuário deve estar logado
+2. **Conversa/Contexto**: Conversa, corretor ou propriedade deve existir
+3. **Dados do Usuário**: Nome e email devem estar disponíveis
+4. **Corretor**: ID do corretor deve ser válido
+5. **Agendamento**: Criação de agendamento deve ser bem-sucedida
+6. **Room ID**: jitsiRoomId deve ser gerado corretamente
+
+### Mensagens de Erro
+
+```javascript
+"Você precisa estar autenticado para iniciar uma videochamada"
+"Conversa não encontrada"
+"Corretor não encontrado"
+"Imóvel não encontrado"
+"Falha ao gerar sala de videochamada"
+"Falha na conexão. Verifique sua internet."
+"Timeout ao conectar. Verifique sua conexão."
+```
+
+## Testes
+
+### Testes Unitários
+
+Localização: `tests/videocall.test.ts`
+
+**Cobertura**:
+- ✓ Geração de Room ID (3 testes)
+- ✓ Configuração Jitsi (5 testes)
+- ✓ Tratamento de Erros (4 testes)
+- ✓ Gerenciamento de Timeouts (3 testes)
+- ✓ Detecção de User Agent (2 testes)
+- ✓ Event Listeners (5 testes)
+- ✓ Display Name e Email (3 testes)
+
+**Executar testes**:
+```bash
+npm test
+```
+
+### Testes Manuais
+
+#### Teste 1: Iniciar Videochamada do Chat
+
+1. Fazer login
+2. Abrir conversa com corretor
+3. Clicar em "Iniciar Videochamada"
+4. Verificar se tela de loading aparece
+5. Verificar se Jitsi carrega
+6. Verificar se áudio/vídeo funcionam
+7. Clicar "Encerrar" e verificar volta ao chat
+
+#### Teste 2: Iniciar Videochamada do Perfil do Corretor
+
+1. Fazer login
+2. Ir para "Corretores"
+3. Selecionar um corretor
+4. Clicar em "Videochamada"
+5. Verificar fluxo completo
+
+#### Teste 3: Iniciar Videochamada da Propriedade
+
+1. Fazer login
+2. Ir para "Imóveis"
+3. Selecionar uma propriedade
+4. Clicar em "Consultar com Corretor"
+5. Verificar fluxo completo
+
+#### Teste 4: Testar Retry
+
+1. Desconectar internet
+2. Tentar iniciar videochamada
+3. Verificar mensagem de erro
+4. Reconectar internet
+5. Clicar "Tentar novamente"
+6. Verificar se conecta
+
+#### Teste 5: Testar Compartilhamento de Tela
+
+1. Iniciar videochamada
+2. Clicar no botão "Compartilhar Tela"
+3. Verificar se tela é compartilhada
+4. Parar compartilhamento
+
+## Troubleshooting
+
+### Problema: Jitsi não carrega
+
+**Causa**: Servidor meet.jit.si indisponível ou sem internet
+
+**Solução**:
+1. Verificar conexão com internet
+2. Aguardar 15 segundos
+3. Clicar "Tentar novamente"
+4. Se persistir, verificar status de meet.jit.si
+
+### Problema: Áudio/Vídeo não funciona
+
+**Causa**: Permissões não concedidas ou dispositivo sem câmera/microfone
+
+**Solução**:
+1. Verificar permissões do app (Configurações > Permissões)
+2. Conceder acesso a câmera e microfone
+3. Reiniciar app
+4. Tentar novamente
+
+### Problema: Conexão cai durante chamada
+
+**Causa**: Internet fraca ou instável
+
+**Solução**:
+1. Verificar sinal de internet
+2. Aproximar-se do roteador WiFi
+3. Desativar outras apps usando internet
+4. Tentar novamente com conexão melhor
+
+### Problema: Timeout ao conectar
+
+**Causa**: Conexão muito lenta
+
+**Solução**:
+1. Verificar velocidade de internet
+2. Usar WiFi em vez de dados móveis
+3. Fechar outros apps
+4. Tentar novamente
+
+## Performance
+
+### Otimizações Implementadas
+
+1. **Resolução Adaptativa**: 720p ideal, ajusta para 360p-1080p conforme banda
+2. **P2P Habilitado**: Conexão direta entre participantes quando possível
+3. **Layer Suspension**: Suspende camadas de vídeo em conexões lentas
+4. **Opus Red**: Redundância de áudio para melhor qualidade
+5. **Noise Detection**: Detecta e avisa sobre ruído de microfone
+
+### Requisitos de Banda
+
+| Qualidade | Upload | Download | Recomendado |
+|-----------|--------|----------|-------------|
+| 360p | 500 kbps | 500 kbps | Conexão fraca |
+| 720p | 2.5 mbps | 2.5 mbps | Conexão normal |
+| 1080p | 5 mbps | 5 mbps | Conexão forte |
+
+## Segurança
+
+### Considerações
+
+1. **Sem Autenticação Jitsi**: Meet.jit.si é público, qualquer pessoa com room ID pode entrar
+2. **Room ID Único**: Difícil adivinhar, mas não impossível
+3. **Sem Criptografia End-to-End**: Jitsi Meet não oferece E2EE por padrão
+
+### Recomendações
+
+1. Usar IDs únicos e aleatórios (já implementado)
+2. Não compartilhar room ID em canais públicos
+3. Encerrar sala após uso
+4. Usar HTTPS para todas as conexões
+5. Considerar Jitsi Meet self-hosted para produção crítica
+
+## Integração com Backend
+
+### Criar Agendamento
+
+```typescript
+const appt = await trpc.appointments.create.mutateAsync({
+  brokerId: number,
+  propertyId?: number,
+  type: "video_call",
+  scheduledAt: new Date().toISOString(),
+  notes?: string,
+});
+// Retorna: { id: number, jitsiRoomId: string }
+```
+
+### Atualizar Status
+
+```typescript
+await trpc.appointments.updateStatus.mutateAsync({
+  id: number,
+  status: "pending" | "confirmed" | "completed" | "cancelled",
+});
+```
+
+### Listar Agendamentos
+
+```typescript
+const appts = await trpc.appointments.list.useQuery();
+// Retorna: Array de agendamentos com dados enriquecidos
+```
+
+## Próximas Melhorias
+
+1. **Gravação de Chamadas**: Implementar gravação automática
+2. **Histórico de Chamadas**: Armazenar duração e participantes
+3. **Avaliação de Chamada**: Permitir feedback após chamada
+4. **Notificações**: Alertar quando corretor está disponível
+5. **Jitsi Self-Hosted**: Para maior controle e segurança
+6. **Integração com CRM**: Sincronizar dados de chamadas com CRM
+
+## Suporte
+
+Para problemas ou dúvidas:
+
+1. Verificar logs do console (DevTools)
+2. Consultar esta documentação
+3. Verificar status de meet.jit.si
+4. Contatar suporte do Manus
