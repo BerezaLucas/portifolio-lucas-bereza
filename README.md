@@ -49,6 +49,7 @@ Linguagens: , C++, Lógica de programação, Css e python.
 | **SM1 - A Corrida do Prompt** |gerar um resultado específico (texto ou imagem, conforme definido pelo professor) utilizando o celular. O grande desafio? limite de apenas 5 iterações (tentativas) para chegar à perfeição. |  [Ver projeto](https://github.com/BerezaLucas/portfolio-lucas-bereza/tree/main/projeto-corrida-do-prompt)|
 | **SM2 - Laboratório de Classificação Visual** |Desenvolvendo uma Imagem com Qwen 3.5 com apenas 5 instruções.| [Ver projeto](https://github.com/BerezaLucas/portfolio-lucas-bereza/tree/main/projeto-laboratorio-de-classificacao-visual)| 
 | **SM3 - Batalha de Modelos & Engenharia de Prompt (XML)** | construir um Prompt Estruturado em XML para gerar uma página HTML Single Page com CSS integrado.|[Ver projeto](https://github.com/BerezaLucas/portfolio-lucas-bereza/tree/main/projeto-batalha-de-modelos)
+**SM4 - Engenharia Reversa  ** | Este sistema é um protótipo para um projeto de modificação de formas.|[Ver projeto](https://github.com/BerezaLucas/portfolio-lucas-bereza/tree/main/projeto-engenharia-reversa)
 | **SM7 - Criação de Musicas no SUNO** | Musicas criadas com plataforma SUNO.|[Ver projeto](https://github.com/BerezaLucas/portfolio-lucas-bereza/tree/main/projeto-suno).
 **SM8 -  Desenvolvimento de App de Videoconferência com Manus AI e Jitsi** | Aplicativo Criado com a ferramenta em Manus A.I.|[Ver projeto](https://github.com/BerezaLucas/portfolio-lucas-bereza/tree/main/projeto-Desenvolvimento-de-App-de-Videoconfer%C3%AAncia-com-Manus-AI-e-Jitsi)
 
